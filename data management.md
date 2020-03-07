@@ -51,6 +51,7 @@ _Statistical mode is not available in base R_
 ---
 
 - Plots
+
 |Plot function| Description|
 | ------------- | -----|
 |boxplot(x) |Box and whiskers plot|
