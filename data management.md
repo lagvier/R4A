@@ -49,3 +49,19 @@ Building blocks of statistical and modeling operations
 _Statistical mode is not available in base R_
 
 ---
+
+- Plots
+|Plot function| Description|
+| ------------- | -----|
+|boxplot(x) |Box and whiskers plot|
+|pie(x) |Circular pie chart|
+|hist(x) |Histogram of the frequencies of x|
+|barplot(x)| Histogram of the values of x|
+|stripchart(x)| Plots values of x along a line|
+|dotchart(x) |Cleveland dot plot|
+|pairs(x)| For a matrix x, plots all bivariate pairs|
+|plot.ts(x)| Plot of x with respect to time (index values of the vector unless specified)|
+|contour(x,y,z) |Contour plot of vectors x and y, z must be a matrix of dimension rows=x and columns=y |
+|image(x,y,z) |Same as contour plot but uses colors instead of lines|
+|persp(x,y,z) |3-d contour plot |
+---
