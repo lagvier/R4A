@@ -1,14 +1,16 @@
 
 
-Data types: vectors, matrices, dataframes/tables
+- Data types: scalars, vectors, matrices, lists, dataframes/tables
 
+- Checking and Changing Types 
 
 ---
-Getting external data
-|Data format | Description | Reading |
+Importing external data
+|Data format | Description | R function |
 | ------------- |:-------------| -----|
 |RData|the R data format - created using R software| ```load()```|
 |csv |comma separated file | ```read.csv()```|
-|xls and xlsx |Excel file formats | ```readxl::read_excel()```|
-
+|txt |Text in tabular format|```read.table()```|
+|xls and xlsx |Excel file formats | use excel packages eg ```readxl::read_excel()```|
+|other formats: sav, etc | SPSS, etc | use _foreign_ package |
 ---
