@@ -21,6 +21,7 @@ Building blocks of statistical and modeling operations
   - Logical: ```!, >,<,>=,<=,!=```
 
 - Basic functions
+
 |Function| Purpose|
 | ------------- | -----|
 |sum(x) |Sums the elements in x|
@@ -37,7 +38,9 @@ Building blocks of statistical and modeling operations
 |quantile(x,p) |The pth quantile of x|
 |cov(x,y) |Covariance between x and y |
 
+
 - Combined basic functions
+
 |Function| Purpose|
 | ------------- | -----|
 |summary(x) |Minimun, maximum, median, mean, quartiles 1 and 3 and number of missing values|
