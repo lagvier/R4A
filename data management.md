@@ -47,7 +47,7 @@ Building blocks of statistical and modeling operations
 |```summary(x)``` |Minimun, maximum, median, mean, quartiles 1 and 3 and number of missing values|
 |```fivenum(x)```| Minimun, maximum, quartiles 1 and 3 and median|
 
-_Statistical mode is not available in base R_
+_modal statistics is not available in base R_
 
 ---
 
