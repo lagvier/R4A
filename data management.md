@@ -37,6 +37,12 @@ Building blocks of statistical and modeling operations
 |quantile(x,p) |The pth quantile of x|
 |cov(x,y) |Covariance between x and y |
 
+- Combined basic functions
+|Function| Purpose|
+| ------------- | -----|
+|summary(x) |Minimun, maximum, median, mean, quartiles 1 and 3 and number of missing values|
+|fivenum(x)| Minimun, maximum, quartiles 1 and 3 and median|
+
 _Statistical mode is not available in base R_
 
 ---
