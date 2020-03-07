@@ -20,7 +20,7 @@ Building blocks of statistical and modeling operations
   - Arithmetics: ```+,-,*,/,^```
   - Logical: ```!, >,<,>=,<=,!=```
 
--Basic functions
+- Basic functions
 |Function| Purpose|
 | ------------- | -----|
 |sum(x) |Sums the elements in x|
