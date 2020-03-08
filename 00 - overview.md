@@ -54,7 +54,7 @@ Contents
 - Data summaries, basic statistics(fivenum)
 ---
 
-#### 
+#### General analysis and functions
 - Group summaries and transformations
 - Inferential statistics: t.test, non-parametric statistics
 - Plotting: scatter, time series, density and smoothing, histograms, barplots, group/trellis plots,
