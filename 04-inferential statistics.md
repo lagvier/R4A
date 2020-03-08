@@ -16,7 +16,7 @@ A non-paramtric equivalent of two-sample t-test is the _Mann–Whitney U-test_ a
 ```t.test(value ~ group, data = data,  alternative = "less", paired = FALSE, var.equal = FALSE, conf.level = 0.95)```
 ```t.test(data$value, alternative = "less", mu = 255)```
 
-#### 1-Way ANOVA
+#### ONE-Way ANOVA
 When the group be tested has more than 2 option, then one-way ANOVA would applied with an aim of determining whether at least one category has a different mean.
 The non-parametric equivalent is done using ```kruskal.test(Value ~ Group, data = data)```
 
