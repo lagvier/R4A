@@ -90,4 +90,4 @@ The building blocks of analytical and graphical operations.
     - Save data: ```write.csv()```, ```write.table()```, use other output packages such as ```XLConnect```
 
 ---
-__Packages__: ```dplyr, reshape2, plyr```
+__Packages__: ```dplyr, reshape, reshape2, plyr```
