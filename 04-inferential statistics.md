@@ -1,5 +1,5 @@
 #### Correlation analysis
-Used to to test strenth and direction of relationship between two variable. Where both variables are qunatitative, a pearson correlation is used. Spearman correlation for ordinal variables, while for qualitative variable in the pair, Kendall correlation is used.
+Used to to test strenth and direction of relationship between two variable. Where both variables are qunatitative, a pearson correlation is used. Spearman and Kendall correlation for ordinal variables.
       - Pearson correlation: ```cor.test(data, method = "pearson")```
       - Spearman rank correlation: ```cor.test(data, method = "spearman")```
       - Kendall correlation: ```cor.test(data, method = "kendall")```
