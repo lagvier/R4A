@@ -21,3 +21,5 @@ __Explorer__: constitutes File browser - to display and manipulate the current w
 __Environment__: consists of environment - hold details of all objects such as data, models, vectors, functions; history - log of the historical use of the R software since installation; connections - to databases and servers
 
 __Editor__: scripts/codes to . useful for reproduceable codes
+
+__Help__: R/package, stack overflow
