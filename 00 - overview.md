@@ -7,11 +7,10 @@ Contents
 1. Introduction to R
 2. Getting started and recommendations
 3. Data management, basic statistics and graphics
-4. General analysis and functions
-5. Specific data analysis and visualization
-6. Advanced R stuff (Optional)
-7. Post-course evaluation
-8. Reference resources
+4. Inferential statistics
+5. Plots/visualization
+6. Advanced ANOVA and GLM models
+99. Reference resources
 ---
 
 #### Introduction
@@ -52,38 +51,41 @@ Contents
 - Data conversions and transformations, conditional transformations of specific variables
 - Other data manipulations: subsetting, slicing, reshaping, merging
 - Data summaries, basic statistics(fivenum)
----
-
-#### General analysis and functions
-- Group summaries and transformations
-- Inferential statistics: t.test, non-parametric statistics
-- Plotting: scatter, time series, density and smoothing, histograms, barplots, group/trellis plots,
-- Adding labels, colors, changing types, superimposing other plots(lines)
 - Iterations: for(), while() loops
 - Functions: use of 'apply' sets of functions
-- Basic custom functions
 ---
 
-#### Specific analysis and visualizations
-- ANOVA and Linear Models
-- GLM and GLS models: logistic, 
+#### Inferential statistics
+- Inferential statistics: t.test, non-parametric statistics
+- ONE-Way ANOVA
+---
+
+#### Plots/visualizations
+- Different plots: scatter, time series, density and smoothing, histograms, barplots, group/trellis plots,
+- Adding labels, colors, changing types, superimposing other plots(lines)
 - Visualization with ggplot
 ---
 
+#### Advanced ANOVA and GLM models
+- TWO-Way ANOVA and mixed effects models
+- GLM and GLS models
+
+---
 #### TSA
 ---
 
-#### Advanced analysis
+#### Advanced modeling
 - FTSA
 - Multivariate analysis
 - Machine learning
 - Deep learning
 ---
 
-#### Shiny 
+#### Data Visualization with Shiny 
 ---
 
 #### Functions and package development
+- Basic custom functions
 ---
 
 
