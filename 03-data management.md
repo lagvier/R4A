@@ -82,6 +82,8 @@ The building blocks of analytical and graphical operations.
   
   - ```reshape()``` or ```cast``` - changing data from wide to long formats or vice versa. ```reshape2::melt()``` changes from wide to long format.
   
+  - ```apply()``` group of functions: ```apply(), lapply(), sapply(), mapply()```
+  
 - Writing/saving data
     - Save workspace: ```save.image()```, 
     - Save plots and images: ```save.png()```...```dev.off()```, etc
