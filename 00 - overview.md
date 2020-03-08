@@ -70,12 +70,14 @@ Contents
 - Visualization with ggplot
 ---
 
-#### Time series analysis
+#### TSA
 ---
 
 #### Advanced analysis
-- Multivariate analysis: PCA
-- Machine learning: k-NN, RF, SVM, ANN, and performance indicators
+- FTSA
+- Multivariate analysis
+- Machine learning
+- Deep learning
 ---
 
 #### Shiny 
