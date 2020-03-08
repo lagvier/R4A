@@ -1,5 +1,5 @@
 #### Correlation analysis
-Used to to test strenth and direction of relationship between two variable. Where at least one variable is continuous, a pearson correlation is used. Spearman and Kendall correlation for ordinal variables.
+Used to to test strenth and direction of relationship between two variable. Where the variables are continuous, a pearson correlation is used. Spearman and Kendall correlation for ordinal variables.
       - Pearson correlation: ```cor.test(data, method = "pearson")```
       - Spearman rank correlation: ```cor.test(data, method = "spearman")```
       - Kendall correlation: ```cor.test(data, method = "kendall")```
@@ -22,7 +22,7 @@ The non-parametric equivalent is done using ```kruskal.test(Value ~ Group, data 
 
 ```model1 <-lm(value ~ group, data = data)```
 
-   - Diagnostics ```plot(model1)``` , ```bartlett.test(Value ~ Group, data=data)``` 
+   - Diagnostics ```plot(model1)``` , ```bartlett.test(Value ~ Group, data=data)``` ; Shapiro-Wilk test - ```shapiro.test(data$value)```
    - ANOVA outputs ```anova(model1)```   
    - Coefficients outputs ```summary(model1)```
    - Pairwise difference in ANOVA
