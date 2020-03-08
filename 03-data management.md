@@ -27,7 +27,7 @@ The building blocks of analytical and graphical operations.
 --- 
 #### Basic information on data
 - Understanding the data: variable types, overview, size, data type, missing points
-    - ```str(), describe(), class(), mode()```
+    - ```str(), describe(), class(), mode(), head(n=5)```
 
 - Basic functions
   |Function| Purpose|
@@ -80,9 +80,9 @@ The building blocks of analytical and graphical operations.
   
   - ```subset()``` select specific variables and observations that have specific conditions. _Slicing_ by specifying column or row indices is also useful in subseting data. Example ```data[2:5, 2:10]``` select row 2-5 and columns 2:10 in a dataframe or matrix ```data```
   
-  - ```reshape()``` or ```cast``` - changing data from wide to long formats or vice versa. ```reshape2::melt()``` changes from wide to long format.
+  - ```reshape()``` or ```cast``` - changing data from wide to long formats or vice versa. ```reshape::melt()``` changes from wide to long format.
   
-  - ```apply()``` group of functions: ```apply(), lapply(), sapply(), mapply()```
+  - ```apply()``` group of functions: ```apply(), lapply(), sapply(), mapply(), tapply()```. Other functions ```aggregate()```
   
 - Writing/saving data
     - Save workspace: ```save.image()```, 
