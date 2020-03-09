@@ -18,3 +18,15 @@ Incomplete block design
   ```
 ---
 #### GLM models
+```glm_model <- glm(value ~ group, data = 'binomial', link = 'logit')```
+
+---
+#### Contrasts
+````
+print(mod1 <- lmer(response ~ Treatment + (1|Block), data = datapbib,
+                  contrasts = c(unordered = "contr.SAS", ordered = "contr.poly")))
+print(anova(mod1))
+```
+
+---
+Packages: lme4
