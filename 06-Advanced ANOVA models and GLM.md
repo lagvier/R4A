@@ -14,7 +14,7 @@ Incomplete block design
   data(augblock)
   aug_model <- aug.rcb(dataframe = augblock, genotypes = "var", block = "blk", yvar = "gw")
   ```
-- Multi-year ANOVA: YEAR and REP FIXED effects
+- Multi-year ANOVA: YEAR and REP assumed fixed
 
   ```model <-  lm(value ~ LINE + YEAR + REP%in%YEAR + LINE:YEAR, data = data)```
 
