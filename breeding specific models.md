@@ -1,19 +1,29 @@
-data(datapbib)
-help(datapbib)
-require("lme4")
-print(mod1 <- lmer(response ~ Treatment + (1|Block), data = datapbib,
-contrasts = c(unordered = "contr.SAS", ordered = "contr.poly")))
-print(anova(mod1))
+
 
 - Line by tester model
   ```
   library(agricolae)
   data(LxT)
   model = with(LxT, lineXtester(replication, line, tester, yield))
-
-
+  ``
+- Analysis of Diallel data: Griffing's and Hayman's approaches
   ```
+  library(DiallelAnalysisR)
+  # Griffing's: Methods= c(1:4), Model= c(1,2)
+  grif_model <- Griffing(y = Yield, Rep = Rep, Cross1 = Cross1, Cross2 = Cross2, 
+                data = GriffingData1, Method = 1, Model = 1)
+  
+  # Hayman Approach
+  hay_model <- Hayman(y= Yield, Rep = Rep, Cross1 = Cross1, Cross2 = Cross2, data = HaymanData)
 
+  ````
+- North Carolina Design I
+```
+install.packages("plantbreeding", repos="http://R-Forge.R-project.org")
+library(plantbreeding)
+nc1_model <- carolina1(dataframe = northcaro1, set = "set", male = "male", female = "female", 
+                    progeny = "progeny", replication = "replication", yvar = "yield")
+```
 
 ---
 packages: lme4
