@@ -22,13 +22,12 @@ The non-parametric equivalent is done using ```kruskal.test(Value ~ Group, data 
 
 ```model1 <-lm(value ~ group, data = data)```
 
-   - Diagnostics ```plot(model1)``` , ```bartlett.test(Value ~ Group, data=data)``` ; Shapiro-Wilk test - ```shapiro.test(data$value)```
+   - Diagnostics ```plot(model1)``` , ```bartlett.test(Value ~ Group, data=data)``` ; ```car::leveneTest(value~group, data=data)```; Shapiro-Wilk test - ```shapiro.test(data$value)```
    - ANOVA outputs ```anova(model1)```   
    - Coefficients outputs ```summary(model1)```
    - Pairwise difference in ANOVA
    - Tukey HSD ```TukeyHSD(aov(value ~ group, data = data))```
    - LSD: ```model<-aov(value~group, data=data); agricolae::LSD.test(value, 'group', alpha = 0.05)```
-   - Levene Test: ```car::leveneTest(value~group, data=data)```
    
 #### Kruskal-Wallis    
    ```kruskal.test(value ~ group, data = data)```
