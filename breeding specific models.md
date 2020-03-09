@@ -18,6 +18,7 @@
 
   ````
 - North Carolina Design I
+![NC I](https://github.com/lagvier/R4A/blob/master/images/nc1.PNG)
 ```
 install.packages("plantbreeding", repos="http://R-Forge.R-project.org")
 library(plantbreeding)
