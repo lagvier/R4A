@@ -82,7 +82,7 @@ The building blocks of analytical and graphical operations.
   
   - ```reshape()``` or ```cast``` - changing data from wide to long formats or vice versa. ```reshape::melt()``` changes from wide to long format.
   
-  - Variable tranformations: ```mutate()```. Use of ```ifelse``` conditions
+  - Variable tranformations: ```mutate()```. Use of ```ifelse``` conditions; working with date informats and string expressions and replacements 
   
   - iterations: ```for()``` and ```while()``` loops
   
