@@ -1,4 +1,9 @@
 #### TWO-Way ANOVA
+```anova_2<- aov(value~ Rep + A +  B, data = data)```
+
+---
+#### Split-Plot analysis
+```anova_sp<- aov(value~ Rep + A +Rep:A +  B  + A:B, data = data)```
 
 ---
 #### Multi-Level Models
