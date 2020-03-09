@@ -4,7 +4,9 @@
   ```
   library(agricolae)
   data(LxT)
-  model = with(LxT, lineXtester(replication, line, tester, yield))
+  model_a = with(LxT, lineXtester(replication, line, tester, yield))
+  model_p = plantbreeding::line.tester(dataframe = linetester, yvar = "trait1",  genotypes = "genotypes", 
+                          replication = "replication",  Lines = "Lines", Testers = "Tester", gclass = "gclass" )
   ``
 - Analysis of Diallel data: Griffing's and Hayman's approaches
 
@@ -41,7 +43,11 @@
   ```
   
 - North Carolina Design III
-
+  ```
+  library(agricolae)
+  data(DC)
+  nc3_model<-carolina(model=3,carolina3)  
+  ```
 
 
 ---
