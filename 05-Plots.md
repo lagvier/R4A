@@ -48,3 +48,5 @@
   fviz_pca_biplot(res.pca, col.ind = iris$Species,
                 palette = "jco", geom = "point")
   ```       
+---
+packages: ggplot2
