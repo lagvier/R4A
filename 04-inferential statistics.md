@@ -28,6 +28,7 @@ The non-parametric equivalent is done using ```kruskal.test(Value ~ Group, data 
    - Pairwise difference in ANOVA
    - Tukey HSD ```TukeyHSD(aov(value ~ group, data = data))```
    - LSD: ```model<-aov(value~group, data=data); agricolae::LSD.test(value, 'group', alpha = 0.05)```
+   - Levene Test: ```car::leveneTest(value~group, data=data)```
    
 #### Kruskal-Wallis    
    ```kruskal.test(value ~ group, data = data)```
