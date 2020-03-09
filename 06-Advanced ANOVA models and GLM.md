@@ -6,6 +6,14 @@
 Incomplete block design
 ![ibd](https://github.com/lagvier/R4A/blob/master/images/ibd%20model.PNG)
 
+
+- Augmented design
+  ```
+  install.packages("plantbreeding", repos="http://R-Forge.R-project.org")
+  library(plantbreeding)
+  data(augblock)
+  aug_model <- aug.rcb(dataframe = augblock, genotypes = "var", block = "blk", yvar = "gw")
+  ```
 - Multi-year ANOVA: YEAR and REP FIXED effects
 
   ```model <-  lm(value ~ LINE + YEAR + REP%in%YEAR + LINE:YEAR, data = data)```
