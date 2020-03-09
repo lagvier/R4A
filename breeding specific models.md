@@ -7,6 +7,8 @@
   model = with(LxT, lineXtester(replication, line, tester, yield))
   ``
 - Analysis of Diallel data: Griffing's and Hayman's approaches
+
+  ![diallels](https://github.com/lagvier/R4A/blob/master/images/diallels.PNG)
   ```
   library(DiallelAnalysisR)
   # Griffing's: Methods= c(1:4), Model= c(1,2)
@@ -29,10 +31,18 @@
                       progeny = "progeny", replication = "replication", yvar = "yield")
   ```
 - North Carolina Design II
+  _Yijk = μ + si + dj + iij + eijk_
+
+  ```
+  library(plantbreeding)
+  data(northcaro2)
+  nc2_model <- carolina2(dataframe = northcaro2, set = "set", male = "male", female = "female",
+                        replication = "rep", yvar = "yield")
+  ```
+  
+- North Carolina Design III
 
 
-```
 
-```
 ---
 packages: lme4
