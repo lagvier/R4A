@@ -26,7 +26,9 @@ Incomplete block design
   ```
 ---
 #### GLM models
-```glm_model <- glm(value ~ group, data = 'binomial', link = 'logit')```
+Generalization of linear models in which the error for the response variable is not normally distributed. The distribution can be specified with a link function.Example,
+
+```glm_model <- glm(value ~ group, data= data, family = binomial, link = 'logit')```
 
 ---
 #### Contrasts
