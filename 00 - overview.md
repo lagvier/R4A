@@ -10,6 +10,7 @@ Contents
 4. Inferential statistics
 5. Plots/visualization
 6. Advanced ANOVA and GLM models
+6. Breeding designs
 99. Reference resources
 ---
 
