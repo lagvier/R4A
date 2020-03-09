@@ -5,8 +5,9 @@
   library(agricolae)
   data(LxT)
   model_a = with(LxT, lineXtester(replication, line, tester, yield))
-  model_p = plantbreeding::line.tester(dataframe = linetester, yvar = "trait1",  genotypes = "genotypes", 
-                          replication = "replication",  Lines = "Lines", Testers = "Tester", gclass = "gclass" )
+  model_p = plantbreeding::line.tester(dataframe = linetester, yvar = "trait1",  
+            genotypes = "genotypes", replication = "replication",  Lines = "Lines", 
+            Testers = "Tester", gclass = "gclass" )
   ``
 - Analysis of Diallel data: Griffing's and Hayman's approaches
 
@@ -51,4 +52,4 @@
 
 
 ---
-packages: lme4
+packages: agricolae, plantbreeding
