@@ -20,13 +20,19 @@
 - North Carolina Design I
 
   ![NC I](https://github.com/lagvier/R4A/blob/master/images/nc1.PNG)
-
+  
+  _Yijk = u + mi + fij + rk + eijk_
   ```
   install.packages("plantbreeding", repos="http://R-Forge.R-project.org")
   library(plantbreeding)
   nc1_model <- carolina1(dataframe = northcaro1, set = "set", male = "male", female = "female", 
                       progeny = "progeny", replication = "replication", yvar = "yield")
   ```
+- North Carolina Design II
 
+
+```
+
+```
 ---
 packages: lme4
