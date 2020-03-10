@@ -28,7 +28,8 @@ milk <- mutate(milk, b = as.character(Camel.milk),
                d = as.character(Cow.milk))
 
 library(reshape2)
-wide = reshape(long, direction = 'wide',idvar = 'ï..Year', timevar = 'variable')
+wide = reshape(long, direction = 'wide',idvar = 'ï..Year', 
+timevar = 'variable')
 names(wide) <- gsub('value.', '', names(wide))
 names(wide) <- gsub('.milk', '', names(wide))
 
