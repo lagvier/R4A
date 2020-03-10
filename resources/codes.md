@@ -44,6 +44,7 @@ milk <- mutate(milk, Cow.milk = as.numeric(Cow.milk),
                Total.production = as.numeric(Total.production)
 )
 
+# install.packages(c('reshape', 'reshape2'), dependencies = T)
 library(reshape2)
 # milk <- read.csv('C:/Users/data/milk production.csv',
 #         header = T) 
@@ -56,13 +57,9 @@ long <- mutate(long, value = as.numeric(value))
 library(plyr)
 long = rename(long, c("ï..Year"="Year", "value"="Score"))
 
-
-wide = reshape(long, direction = 'wide',idvar = 'ï..Year', 
-timevar = 'variable')
-names(wide) <- gsub('value.', '', names(wide))
+wide = reshape(long, direction = 'wide',idvar = 'Year', timevar = 'variable')
+names(wide) <- gsub('Score.', '', names(wide))
 names(wide) <- gsub('.milk', '', names(wide))
-
-install.packages(c('reshape', 'reshape2'), dependencies = T)
 
 subset(milk, `ï..Year`<1998, select = c('Camel.milk'))
 merge(data1, data2, by = ýear, all = T)
