@@ -2,6 +2,7 @@
 
 
 # read data
+# change to the correct directory in your computer
 milk <- read.csv('C:/Users/data/milk production.csv',
          header = T) 
 
@@ -55,6 +56,7 @@ milk$b<-NULL
 
 
 # save/write
+# change to the correct directory in your computer
 write.csv(milk, 'C:/Users/data/modi milk production.csv',
           row.names = FALSE) 
 
