@@ -2,7 +2,7 @@
 
 
 # read data
-milk <- read.csv('C:/Users/alagat/OneDrive - CGIAR/Desktop/GRP Resources/Training/milk production.csv',
+milk <- read.csv('C:/Users/data/milk production.csv',
          header = T) 
 
 # overview of data
@@ -55,7 +55,7 @@ milk$b<-NULL
 
 
 # save/write
-write.csv(milk, 'C:/Users/alagat/OneDrive - CGIAR/Desktop/GRP Resources/Training/modi milk production.csv',
+write.csv(milk, 'C:/Users/data/modi milk production.csv',
           row.names = FALSE) 
 
 ```
