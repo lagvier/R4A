@@ -56,31 +56,50 @@ long <- mutate(long, value = as.numeric(value))
 # rename variables
 library(plyr)
 long = rename(long, c("ï..Year"="Year", "value"="Score"))
-
-wide = reshape(long, direction = 'wide',idvar = 'Year', timevar = 'variable')
+long <- mutate(long, variable = gsub(".milk", "", 
+                                     as.character(variable)))
+# long$valuable<-NULL # delete the variable column
+library(reshape)
+# assignment operator: = , <-
+wide = reshape(long, direction = 'wide',idvar = 'Year', 
+               timevar = 'variable')
 names(wide) <- gsub('Score.', '', names(wide))
-names(wide) <- gsub('.milk', '', names(wide))
 
-subset(milk, `ï..Year`<1998, select = c('Camel.milk'))
-merge(data1, data2, by = ýear, all = T)
-rbind(milk, milk)
-cbind(milk, country = 'kenya')
+# logical operators: !=, ==, >, <, >=,<=, %in%
+subset(wide, Year==2010, select = c('Camel', ""))
+
+letters[1:7] %in% c("c", "f")
+# grepl() and grep()
+a <- c('kenya', 'uganda', 'tanzania', 'usa', 'italy', 'iran')
+grepl('^u', a)
+grepl('a$', a)
+
+grep('^u', a)
+grep('a$', a)
+
+grep('^u', a, value = TRUE)
+grep('a$', a, value = TRUE)
+
+data = as.data.frame(cbind(
+  Year = c(min(wide$Year):max(wide$Year)),
+  Age = ifelse(Year<2000, "Old", "New")
+))
+# merge data
+alldata = merge(wide, data, data2, by = "Year")
+
+# append data
+rbind(milk, milk) 
+
+# add new column to the data with the value indicate
+cbind(milk, country = 'kenya') 
 
 
-for(i in unique(milk$ï..Year)){
+for(i in unique(alldata$Age)){
   cat(i, '\n')
 }
 
-apply(milk, 1, length) #count columns per row
-apply(milk, 2, length)  # count rows per column
-
-
-milk$a<-NULL
-milk$b<-NULL
-
-# milk$Camel.milk <- gsub(',', '',
-#                        as.character(milk$Camel.milk))
-
+apply(wide[,-1], 1, mean) #mean columns per row
+apply(wide[,-1], 2, mean)  # mean rows per column
 
 # save/write
 # change to the correct directory in your computer
