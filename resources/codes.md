@@ -24,8 +24,25 @@ milk$b <- gsub(',', '', milk$b) # string conversion
 milk$Cow.milk <- as.numeric(milk$b)
 
 library(dplyr)
-milk <- mutate(milk, b = as.character(Camel.milk),
-               d = as.character(Cow.milk))
+milk <- mutate(milk, Cow.milk = as.character(Cow.milk),
+               Camel.milk = as.character(Camel.milk),
+               Sheep.milk = as.character(Sheep.milk),
+               Goat.milk = as.character(Goat.milk),
+               Total.production = as.character(Total.production)
+               )
+
+milk <- mutate(milk, Cow.milk = gsub(',', '', Cow.milk),
+               Camel.milk = gsub(',', '', Camel.milk),
+               Sheep.milk = gsub(',', '', Sheep.milk),
+               Goat.milk = gsub(',', '', Goat.milk),
+               Total.production = gsub(',', '', Total.production)
+)
+milk <- mutate(milk, Cow.milk = as.numeric(Cow.milk),
+               Camel.milk = as.numeric(Camel.milk),
+               Sheep.milk = as.numeric(Sheep.milk),
+               Goat.milk = as.numeric(Goat.milk),
+               Total.production = as.numeric(Total.production)
+)
 
 library(reshape2)
 wide = reshape(long, direction = 'wide',idvar = 'ï..Year', 
