@@ -51,8 +51,11 @@ long = melt(milk, id = "ï..Year")
 long <- mutate(long, value = as.character(value))
 long <- mutate(long, value = gsub(',', '', value))
 long <- mutate(long, value = as.numeric(value))
+
 # rename variables
-long = rename(long, c("ï..Year"="Year"))
+library(plyr)
+long = rename(long, c("ï..Year"="Year", "value"="Score"))
+
 
 wide = reshape(long, direction = 'wide',idvar = 'ï..Year', 
 timevar = 'variable')
