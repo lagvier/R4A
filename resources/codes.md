@@ -45,12 +45,14 @@ milk <- mutate(milk, Cow.milk = as.numeric(Cow.milk),
 )
 
 library(reshape2)
-milk <- read.csv('C:/Users/data/milk production.csv',
-         header = T) 
+# milk <- read.csv('C:/Users/data/milk production.csv',
+#         header = T) 
 long = melt(milk, id = "ï..Year")
 long <- mutate(long, value = as.character(value))
 long <- mutate(long, value = gsub(',', '', value))
 long <- mutate(long, value = as.numeric(value))
+# rename variables
+long = rename(long, c("ï..Year"="Year"))
 
 wide = reshape(long, direction = 'wide',idvar = 'ï..Year', 
 timevar = 'variable')
